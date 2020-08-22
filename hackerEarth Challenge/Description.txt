@@ -1,0 +1,19 @@
+I started with importing andas,Numpy, Matplotlib,Seaborn for necessary computation. Then I imported Test and Train Data into a Jupyter NoteBook. 
+
+Then I merge the Test and Train data into a single DataFrame so that i can convert the categorical variable into dummies variable.. I add extra two columns in the test data so that train and test data have same number of columns.
+
+After that I remove the [ pet_id, issue_date, listing_date ] as they does not affect the category of a animal..
+
+After that I check for the Null values in the dataFrame and I encountered that only condition column have null values..
+Then I look how many times each unique values come in the dataset and I found that 1 comes most frequently, So I replaced all the Null values with 1.
+Before that I also tried to predict the null values using Various model but their accuracy are not upto the mark, So i Droped that idea..
+
+After that I change the height column from cm to m so that height and length are on the same scale..
+
+Then i check the correlation of columns but none of them have high correlation..
+
+After that I split the dataset again into train and test..
+
+After that I applied so many classifier algorithm like AdaBoostClassifier, ExtraTreeClassifier, RandomForest,logistic Regression and GradientBoostingClassifier and among them GradientBoostingClassifier performs the best..
+
+I also applied the Scaling concept but it doesn't affect the model so much..
